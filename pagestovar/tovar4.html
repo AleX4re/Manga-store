@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин комиксов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+    <div class="header">
+      <div class="menu">
+        <a href="../index.html">Главная</a>
+        <a href="../about.html">О нас</a>
+        <a href="../sale.html">Скидочная карта</a>
+        <a href="../otz.html">Отзывы</a>
+      </div>
+      <div class="logo">
+        <h1>Manga Store</h1>
+      </div>
+    </div>  
+
+  <div class="main">
+    <div class="product-container">
+      <div class="product-images">
+        <div class="image-thumbnails">
+          <img src="imaget4/1.jpg" alt="Product Thumbnail 1" onclick="changeImage(this)" />
+          <img src="imaget4/2.jpg" alt="Product Thumbnail 2" onclick="changeImage(this)" />
+          <img src="imaget4/3.jpg" alt="Product Thumbnail 3" onclick="changeImage(this)" />
+        </div>
+        <div class="main-image">
+          <img id="main-image " src="imaget4/1.jpg" alt="Product Image 1" />
+        </div>
+      </div>
+      <div class="star-rating">
+        <span class="star-rating__star" data-rating="1">★</span>
+        <span class="star-rating__star" data-rating="2">★</span>
+        <span class="star-rating__star" data-rating="3">★</span>
+        <span class="star-rating__star" data-rating="4">★</span>
+        <span class="star-rating__star" data-rating="5">★</span>
+      </div>
+      <div class="product-details">
+        <h1>Не дразни меня, Нагаторо-сан! Том 2.</h1>
+        
+        <p>
+          <b>Автор:s</b> Нанаси
+        </p>
+        <p>
+          <b>Жанр:</b> Комедия, Романтика и Повседневность
+        </p>
+        <p>
+          <b>Год выпуска:</b> 2024
+        </p>
+        <p>
+          <b>Издатель:</b> XL Media
+        </p>
+        <p>
+          <b>Количество страниц:</b> 306
+        </p>
+        <p>
+          <b>Обложка: </b> Твердый переплет и Суперобложка
+        </p>
+        <p>
+          <b>Описание:</b> Нагаторо не отстает от сэмпая даже летом! И не только она, но и стайка ее болтливых подружек. На фестивале фейерверков, на солнечном пляже — сэмпаю нигде не скрыться от прилипчивых старшеклассниц. Правда, Нагаторо такой охоте совсем не рада... Неужели она ревнует?
+        </p>
+        <button class="btn add-to-cart">Добавить в корзину</button>
+        <button class="btn back-btn">
+          <a href="../index.html">Назад</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer">
+    <div class="copyright">
+      <p>Copyright © 2024 Manga Store</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

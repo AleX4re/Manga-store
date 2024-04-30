@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин комиксов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="menu">
+      <a href="index.html" class="active">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="sale.html">Скидочная карта</a>
+      <a href="otz.html">Отзывы</a>
+    </div>
+    <div class="logo">
+      <h1>Manga Store</h1>
+    </div>
+  </div>  
+
+  <div class="main">
+    <div class="products">
+      <div class="korzina">
+        <button class="korb">
+         <img class="kor" id="cart-button" src="./images/cart.png" alt="Cart" srcset="" />
+        </button>
+      </div>
+      <div class="products__container">
+        <div class="product" data-id="9" data-price="495">
+          <a href="#"><img id="kartinka9" src="images/9.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name9">Судзуки просто хочет жить спокойно. Том 2</h3></a>
+            <p>По ряду причин Дзинскэ вынужден скрываться вместе со своей матерью. Но долго...</p>
+            <span class="product__price"> 495 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="10" data-price="505">
+          <a href="#"><img id="kartinka10" src="images/10.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name10">Ицуя-сан. Том 1</h3></a>
+            <p>Цурута Ицуя, временная учительница изо, работающая в сельской школе, обладает...</p>
+            <span class="product__price">505 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="11" data-price="495">
+          <a href="#"><img id="kartinka11" src="images/11.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name11">Детективное агентство города призраков</h3></a>
+            <p>В городе призраков Касукано часто происходят таинственные и непонятные события...</p>
+            <span class="product__price">495 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="12" data-price="639">
+          <a href="#"><img id="kartinka12" src="images/12.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name12">Путь домохозяина. Том 9</h3></a>
+            <p>Домохозяин против ребёнка. Знаток домашней кухни против ненавистника...</p>
+            <span class="product__price">639 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="13" data-price="1490">
+          <a href="#"><img id="kartinka13" src="images/13.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name13">Берсерк. Том 7.</h3></a>
+            <p>Колесо судьбы вновь пришло в движение, сплетя воедино нити в узоре мироздания...</p>
+            <span class="product__price">1490 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="14" data-price="805">
+          <a href="#"><img id="kartinka14" src="images/14.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name14">Король шаманов. Том 11.</h3></a>
+            <p>Рэн мертв, Ё отказался от Битвы шаманов, а Чоколав и Хорохоро...</p>
+            <span class="product__price">805 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="15" data-price="404">
+          <a href="#"><img id="kartinka15" src="images/15.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name15">Истории монстров. Том 15.</h3></a>
+            <p>Бой с Киссшот завершен, все тайны раскрыты. Коёми сковывает отчаяние, и он молит...</p>
+            <span class="product__price">404 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="16" data-price="416">
+          <a href="#"><img id="kartinka16" src="images/16.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name16">Эльф не может похудеть. Том 5</h3></a>
+            <p>Наоэ Томоацу, юный консультант в популярной клинике сэйтай-терапии...</p>
+            <span class="product__price">416 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <button onclick="location.href='index.html'" class="prevButton" id="prev">&laquo;</button>
+        <a href="index.html">1</a>
+        <a class="active" href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <button onclick="location.href='page3.html'" class="nextButton" id="next">&raquo;</button>
+      </div>
+    </div>
+
+    <div id="cart" class="hidden">
+      <div class="cart-header">
+      <h3 class="cart__title">Корзина</h3>
+      <ul class="cart__items"></ul>
+      <button class="close-button">×</button>
+    </div>
+      <div class="cart__total-wrapper">
+        <span class="cart__total-label">Всего:</span>
+        <span class="cart__total">0 ₽</span>
+        <button class="buy">Купить</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    <script>   
+      //работа корзины
+     
+    </script>
+
+    <div class="footer">
+      <div class="copyright">
+        <p>Copyright © 2024 Manga Store</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

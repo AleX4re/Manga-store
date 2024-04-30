@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин комиксов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="menu">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="sale.html" class="active">Скидочная карта</a>
+      <a href="otz.html">Отзывы</a>
+    </div>
+    <div class="logo">
+      <h1>Manga Store</h1>
+    </div>
+  </div>  
+
+  <div class="main">
+    <div class="products1">
+      <div class="products__container">
+        <form class="contact_form" action="" method="post" name="contact_form"> 
+          <div id="okno">
+              <ul>
+                  <li>
+                      <h2>Заполните анкету</h2>
+                  </li> 
+      
+                  <li>
+                      <label for="name" required>Имя:</label>
+                        <input type="text" name="name" id="name" />
+                  </li>
+      
+                  <li>
+                      <label for="fam" required>Фамилия:</label>
+                      <input type="fam" fam="fam" id="fam" />
+                  </li>
+      
+                  <li>
+                      <label for="tel" required>Телефон:</label>
+                      <input type="tel" tel="tel" id="tel" />
+                  </li>
+                  
+                  <li>
+                      <label for="voz" required>Возраст:</label>
+                      <input type="voz" fam="voz" id="voz" />
+                  </li>
+      
+                  <li>
+                      <button class="submit1" type="submit1" onclick="sale()">Зарегестрировать карту</button>
+                  </li>
+      
+                  <li>
+                      <button class="submit1" type="submit1" onclick="Clear()">Очистить данные</button>
+                  </li>
+              </ul>
+          </div>
+          
+  </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="footer3">
+      <div class="copyright1">
+        <p>Copyright © 2024 Manga Store</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

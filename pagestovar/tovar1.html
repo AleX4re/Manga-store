@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин комиксов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+    <div class="header">
+      <div class="menu">
+        <a href="../index.html">Главная</a>
+        <a href="../about.html">О нас</a>
+        <a href="../sale.html">Скидочная карта</a>
+        <a href="../otz.html">Отзывы</a>
+      </div>
+      <div class="logo">
+        <h1>Manga Store</h1>
+      </div>
+    </div>  
+
+  <div class="main">
+    <div class="product-container">
+      <div class="product-images">
+        <div class="image-thumbnails">
+          <img src="imaget1/1.jpg" alt="Product Thumbnail 1" onclick="changeImage(this)" />
+          <img src="imaget1/2.jpg" alt="Product Thumbnail 2" onclick="changeImage(this)" />
+          <img src="imaget1/3.jpg" alt="Product Thumbnail 3" onclick="changeImage(this)" />
+          <img src="imaget1/4.jpg" alt="Product Thumbnail 4" onclick="changeImage(this)" />
+          <img src="imaget1/5.jpg" alt="Product Thumbnail 5" onclick="changeImage(this)" />
+        </div>
+        <div class="main-image">
+          <img id="main-image " src="imaget1/1.jpg" alt="Product Image 1" />
+        </div>
+      </div>
+      <div class="star-rating">
+        <span class="star-rating__star" data-rating="1">★</span>
+        <span class="star-rating__star" data-rating="2">★</span>
+        <span class="star-rating__star" data-rating="3">★</span>
+        <span class="star-rating__star" data-rating="4">★</span>
+        <span class="star-rating__star" data-rating="5">★</span>
+      </div>
+      <div class="product-details">
+        <h1>Путешествие Кино. Том 2</h1>
+        
+        <p>
+          <b>Автор:s</b> Ирука Сиомия и Кэйити Сигусава
+        </p>
+        <p>
+          <b>Жанр:</b> Фантастика, Приключения, Сэйнэн и Повседневность
+        </p>
+        <p>
+          <b>Год выпуска:</b> Апрель 2024
+        </p>
+        <p>
+          <b>Издатель:</b> Alt Graph
+        </p>
+        <p>
+          <b>Количество страниц:</b> 164
+        </p>
+        <p>
+          <b>Обложка: </b> Мягкий переплет
+        </p>
+        <p>
+          <b>Описание:</b> 
+          Неразлучная парочка, невозмутимая Кино и болтливый моторрад Гермес, продолжают свои странствия. В этот раз они окажутся в стране, где все решения принимаются большинством. К сожалению, эта, казалось бы, здравая идея доводится до абсурда, поэтому жить здесь становится практически невозможно. Следующая страна гордится своим процветанием и мирным сосуществованием с соседями, с которыми они враждовали на протяжении столетий. Правда, и здесь не всё так радужно: этот мир достигается ценой бессчётного количества невинных жизней. Дабы не оказаться втянутыми в местные конфликты, Кино и Гермес неотступно следуют своему правилу не оставаться на одном месте больше трёх дней, хотя порой расставания даются нелегко.
+        </p>
+        <button class="btn add-to-cart">Добавить в корзину</button>
+        <button class="btn back-btn">
+          <a href="../index.html">Назад</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer">
+    <div class="copyright">
+      <p>Copyright © 2024 Manga Store</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

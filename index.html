@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин комиксов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="menu">
+      <a href="index.html" class="active">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="sale.html">Скидочная карта</a>
+      <a href="otz.html">Отзывы</a>
+    </div>
+    <div class="logo">
+      <h1>Manga Store</h1>
+    </div>
+  </div>  
+
+  <div class="main">
+    <div class="products">
+      <div class="korzina">
+        <button class="korb">
+         <img class="kor" id="cart-button" src="./images/cart.png" alt="Cart" srcset="" />
+        </button>
+      </div>
+      <div class="products__container">
+        <div class="product" data-id="1" data-price="540">
+          <a href="pagestovar/tovar1.html"><img id="kartinka1" src="images/1.webp" alt=""></a>
+          <div class="product__info">
+            <a href="pagestovar/tovar1.html"><h3 id="name1">Путешествие Кино. Том 2</h3></a>
+            <p>Неразлучная парочка, невозмутимая Кино и болтливый моторрад Гермес, продолжают...</p>
+            <span class="product__price">540 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product"data-id="2" data-price="540">
+          <a href="pagestovar/tovar2.html"><img id="kartinka2" src="images/2.webp" alt=""></a>
+          <div class="product__info">
+            <a href="pagestovar/tovar2.html"><h3 id="name2">Путешествие Кино. Том 3</h3></a>
+            <p>Далеко на западе за бескрайним лесом лежит страна настолько прекрасная...</p>
+            <span class="product__price">540 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="3" data-price="960">
+          <a href="pagestovar/tovar3.html"><img id="kartinka3" src="images/3.webp" alt=""></a>
+          <div class="product__info">
+            <a href="pagestovar/tovar3.html"><h3 id="name3">Не дразни меня, Нагаторо-сан! Том 2.</h3></a>
+            <p>Нагаторо не отстает от сэмпая даже летом! И не только она, но и стайка ее...</p>
+            <span class="product__price">960 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="4" data-price="845">
+          <a href="pagestovar/tovar4.html"><img id="kartinka4" src="images/4.webp" alt=""></a>
+          <div class="product__info">
+            <a href="pagestovar/tovar4.html"><h3 id="name4">Магическая битва. Том 10</h3></a>
+            <p>Юдзи Итадори и Мэгуми Фусигуро готовы вступить в «Смертельную миграцию», но...</p>
+            <span class="product__price">845 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="5" data-price="980">
+          <a href="#"><img id="kartinka5" src="images/5.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name5">Страна самоцветов. Книга 5</h3></a>
+            <p>Далёкое будущее. Бессмертные драгоценности продолжают воевать с лунянами...</p>
+            <span class="product__price">980 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="6" data-price="995">
+          <a href="#"><img id="kartinka6" src="images/6.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name5">Naruto. Наруто. Книга 14. Величайшее творение</h3></a>
+            <p>Взяв от обучения у Оротимару всё, что ему было нужно, Саскэ с командой...</p>
+            <span class="product__price">995 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="7" data-price="432">
+          <a href="#"><img id="kartinka7" src="images/7.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name5">Я и недовольный монстрик</h3></a>
+            <p>Хадзимэ Ито из семьи, где три поколения живут под одной крышей, и он без ума от своих маленьких...</p>
+            <span class="product__price">432 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="product" data-id="8" data-price="675">
+          <a href="#"><img id="kartinka8" src="images/8.webp" alt=""></a>
+          <div class="product__info">
+            <a href="#"><h3 id="name5">Медалистка. Том 5</h3></a>
+            <p>Отборочные на чемпионат Японии в самом разгаре! Цукасе и Инори предстоит бросить вызов ведущим...</p>
+            <span class="product__price">675 руб.</span>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <button onclick="location.href='page3.html'" class="prevButton" id="prev">&laquo;</button>
+        <a class="active" href="index.html">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <button onclick="location.href='page2.html'" class="nextButton" id="next">&raquo;</button>
+      </div>
+    </div>
+
+    <div id="cart" class="hidden">
+      <div class="cart-header">
+      <h3 class="cart__title">Корзина</h3>
+      <ul class="cart__items"></ul>
+      <button class="close-button">×</button>
+    </div>
+      <div class="cart__total-wrapper">
+        <span class="cart__total-label">Всего:</span>
+        <span class="cart__total">0 ₽</span>
+        <button class="buy">Купить</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    <script>   
+      //работа корзины
+     
+    </script>
+
+    <div class="footer">
+      <div class="copyright">
+        <p>Copyright © 2024 Manga Store</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
