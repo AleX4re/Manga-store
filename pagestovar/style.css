@@ -5,7 +5,6 @@
   font-family: sans-serif;
 }
 
-/* Header */
 
 .container {
   min-height: 100%;
@@ -58,8 +57,6 @@
   font-size: 26px;
 }
 
-/* Main container */
-
 .main {
   display: flex;
   justify-content: center;
@@ -67,16 +64,12 @@
   height: calc(100vh - 40px);
 }
 
-/* Product container */
-
 .product-container {
   position: relative;
   width: 1000px;
   display: flex;
   justify-content: space-between;
 }
-
-/* Product images */
 
 .product-images {
   display: flex;
@@ -127,8 +120,6 @@
   display: block;
 } 
 
-/* Product details */
-
 .product-details {
   width: 50%;
   padding: 20px;
@@ -165,8 +156,6 @@
   text-decoration: none;
   color: #fff;
 }
-
-/* Footer */
 
 .footer {
   height: 50px;
